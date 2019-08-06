@@ -26,6 +26,7 @@ public class AsyncTest {
         ModelAndView modelAndView = new ModelAndView("view");
         serviceImpl.send();
         modelAndView.addObject("name","I Am Boomking");
+        //yyuioyuio
         //888888
         return modelAndView;
     }
