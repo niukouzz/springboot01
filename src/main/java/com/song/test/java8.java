@@ -1,6 +1,8 @@
 package com.song.test;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cglib.SpringCglibInfo;
+import org.springframework.cglib.beans.BeanGenerator;
 
 import java.lang.reflect.Array;
 import java.time.LocalDate;
@@ -90,6 +92,19 @@ public class java8 {
             System.out.println("key = " + entry.getKey() + ", value = " + entry.getValue());
             //list.add()
         }
+    }
+
+    public static void cglibTest() throws Exception {
+
+        HashMap<String, Class<?>> map = new HashMap<>();
+        map.put("id",Class.forName("java.lang.Integer"));
+        map.put("name", Class.forName("java.lang.String"));
+        map.put("address", Class.forName("java.lang.String"));
+        BeanGenerator beanGenerator = new BeanGenerator();
+
+        //SpringCglibInfo springCglibInfo = new SpringCglibInfo();
+
+
     }
 
     public static void main(String[] args) {

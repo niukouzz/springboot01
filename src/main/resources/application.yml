@@ -1,5 +1,3 @@
-server:
-  port: 8788
 spring:
   application:
     name: springboot01
@@ -18,3 +16,5 @@ spring:
     multipart:
       max-file-size: 50MB
       max-request-size: 50MB
+
+hschefu: c13abb17def941ceb90ed188779268
