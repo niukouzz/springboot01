@@ -10,4 +10,11 @@ package com.song.service;
 public interface Service {
 
     public void send();
+
+    void JobOne();
+
+    void JobTwo();
+
+    void JobThree();
+
 }

@@ -19,12 +19,24 @@ import org.springframework.web.servlet.ModelAndView;
 public class AsyncTest {
 
     @Autowired
-    private Service serviceImpl;
+    private Service myService;
 
     @RequestMapping(value = "test", method = RequestMethod.GET)
     public ModelAndView testController(){
         ModelAndView modelAndView = new ModelAndView("view");
-        serviceImpl.send();
+        System.out.println("开始访问");
+        long l1 = System.currentTimeMillis();
+        myService.JobOne();
+        myService.JobTwo();
+        myService.JobThree();
+        long l2 = System.currentTimeMillis();
+
+        System.out.println("结束访问,用时"+(l2-l1));
+//        System.out.println("111111111");
+//        myService.send();
+//        System.out.println("222222222");
+
+
         modelAndView.addObject("name","I Am Boomking");
         //yyuioyuio
         //888888
