@@ -1,7 +1,18 @@
+#server:
+#  port: 8988
 #spring:
+#  profiles:
+#    active: dev
 #  application:
 #    name: springboot01
-#   #freemarker配置
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 192.168.89.136:8848
+#        namespace: 2ffccaa6-0c7f-4fbd-b613-e68a612b5c88
+#        group: DEFAULT_GROUP
+##        file-extension: yml
+#    #freemarker配置
 #  freemarker:
 ##    template-loader-path: classpath:/templates/
 #    cache: false
@@ -17,4 +28,3 @@
 #      max-file-size: 50MB
 #      max-request-size: 50MB
 #
-#hschefu: c13abb17def941ceb90ed188779268
