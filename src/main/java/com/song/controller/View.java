@@ -16,7 +16,7 @@ public class View {
     @Value("${hschefu1}")
     private String name1;
 
-    @RequestMapping(value = "view", method = RequestMethod.GET)
+    @RequestMapping(value = "view01", method = RequestMethod.GET)
     public ModelAndView view (){
         System.out.println(1111);
         ModelAndView modelAndView = new ModelAndView("view");
