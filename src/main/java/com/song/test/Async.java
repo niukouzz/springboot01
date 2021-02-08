@@ -3,6 +3,8 @@ package com.song.test;
 import com.song.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.lang.reflect.Proxy;
+
 public class Async {
     @Autowired
     private Service service;
@@ -13,6 +15,7 @@ public class Async {
     }
 
     public static void main(String[] args) {
+//        Proxy.newProxyInstance()
 //        A();
     }
 }

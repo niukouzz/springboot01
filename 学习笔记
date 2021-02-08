@@ -1,0 +1,8 @@
+springAOP切面代理取决于传过来的对象是接口还是类，接口使用JDK动态代理，类使用CGlib代理
+为什么java动态代理必须使用接口？
+java默认是单继承多实现，被代理的对象已经默认extends proxy
+spring自动注入 -->byType -->byName
+@Autowired(required = false) 不会报错，当前注入对象为null
+单例Bean：可以有多个同一类型的对象，名字不同，
+
+
