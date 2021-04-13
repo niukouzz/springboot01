@@ -1,6 +1,7 @@
 package com.song.test;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.cglib.SpringCglibInfo;
 import org.springframework.cglib.beans.BeanGenerator;
 
@@ -8,8 +9,11 @@ import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.LongAccumulator;
 import java.util.concurrent.atomic.LongAdder;
+import java.util.concurrent.locks.Lock;
 
 /**
  * @author SCHS
@@ -108,7 +112,13 @@ public class java8 {
     }
 
     public static void main(String[] args) {
-        lambdaMap();
+//        lambdaMap();
+//        Executors.newCachedThreadPool();
+//        Executors.newFixedThreadPool();
+//        Executors.newScheduledThreadPool();
+//        Executors.newSingleThreadExecutor()
+//                Lock
+
     }
 
 

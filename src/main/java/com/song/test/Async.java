@@ -2,9 +2,10 @@ package com.song.test;
 
 import com.song.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.lang.reflect.Proxy;
-
+@ComponentScan
 public class Async {
     @Autowired
     private Service service;
